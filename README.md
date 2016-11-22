@@ -11,21 +11,3 @@
 подменю открывается при наведении на пункт подменю, и закрывается при уходе мышки с подменю или пункта подменю (смотри события mouseenter и mouseleave)
 с позиционированием (чтобы все меню и подменю вмещались в видимую часть экрана) можно не заморачиваться
 стилизовать меню можно на свой вкус (главное - видимые границы элементов)
-Пример объекта-структуры меню
-
-var menuExample = [{
-	title: 'File',
-	action: function () {console.log('open file')}
-}, {
-	title: 'Edit',
-	action: function () {console.log('edit content')}
-}, {
-	title: 'More stuff',
-	submenu: [{
-		title: 'Send by email',
-		action: function () {console.log('emailed')}
-	}, {
-		title: 'Send via skype',
-		action: function () {console.log('skyped')}
-	}]
-}]
